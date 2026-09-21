@@ -1,62 +1,62 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Georgia, serif;
-    background-color: #f7eee2;
-    color: #4b3425;
-}
-
-
-/* NAVIGATION */
-
-.navbar {
-    background-color: #5a3b28;
-    padding: 20px 60px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navbar h1 {
-    color: white;
-}
-
-.nav-links {
-    display: flex;
-    gap: 30px;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-}
-
-.nav-links a:hover {
-    text-decoration: underline;
-}
-
-
-/* HERO */
-
-.hero {
-    min-height: 400px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-
-    background-image:
-        linear-gradient(
-            rgba(70, 45, 30, 0.45),
-            rgba(70, 45, 30, 0.45)
-        ),
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+} 
+ 
+body { 
+    font-family: Georgia, serif; 
+    background-color: #f7eee2; 
+    color: #4b3425; 
+} 
+ 
+ 
+/* NAVIGATION */ 
+ 
+.navbar { 
+    background-color: #5a3b28; 
+    padding: 20px 60px; 
+ 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+} 
+ 
+.navbar h1 { 
+    color: white; 
+} 
+ 
+.nav-links { 
+    display: flex; 
+    gap: 30px; 
+} 
+ 
+.nav-links a { 
+    color: white; 
+    text-decoration: none; 
+} 
+ 
+.nav-links a:hover { 
+    text-decoration: underline; 
+} 
+ 
+ 
+/* HERO */ 
+ 
+.hero { 
+    min-height: 400px; 
+ 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+ 
+    text-align: center; 
+ 
+    background-image: 
+        linear-gradient( 
+            rgba(70, 45, 30, 0.45), 
+            rgba(70, 45, 30, 0.45) 
+        ), 
         url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1600&q=80");
 
     background-size: cover;
@@ -223,9 +223,15 @@ body {
 .story-card img {
     width: 100%;
 
-    height: 230px;
+    height: 330px;
 
-    object-fit: cover;
+    object-fit: contain;
+
+    object-position: center;
+
+    display: block;
+
+    background-color: #fffaf2;
 }
 
 
@@ -317,6 +323,10 @@ footer {
     .about {
         padding: 50px 8%;
     }
+
+    .story-card img {
+        height: 330px;
+    }
 }
 
 
@@ -338,5 +348,9 @@ footer {
 
     .hero h2 {
         font-size: 35px;
+    }
+
+    .story-card img {
+        height: 380px;
     }
 }
